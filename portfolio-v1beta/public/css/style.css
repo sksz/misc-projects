@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header-img {
+    height: 20vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header-img img,
+.section-img img {
+    width: 100%;
+}
+
+.navbar {
+    padding: 1em 2em;
+}
+
+.navbar-brand img {
+    display: inline-block;
+    margin-right: .2em;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    padding: 1em 4em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 5em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+main h4 {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    margin-top: .5em;
+    width: 50%;
+}
+
+.row {
+    margin-top: 3em;
+}
+
+.card {
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+    margin: 0 1rem;
+    padding: 0;
+}
+
+h5,
+.bold-text {
+    font-weight: 700;
+}
+
+form {
+    margin-top: 3em;
+    text-align: left;
+    width: 60%;
+}
+
+label {
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-link a {
+    display: inline-block;
+}
+
+.footer-link img {
+    height: 2vh;
+    margin-right: .5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 1em;
+    }
+
+    main {
+        margin-top: 2em;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+
+    main h4,
+    form {
+        width: 100%;
+    }
+
+    .tz-gallery {
+        padding: 0 !important;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 80vw;
+    }
+
+}

@@ -1,0 +1,181 @@
+<!-- Document type, always on top of the file!-->
+<!DOCTYPE html>
+
+<html>
+
+<!-- Holds metadata elements: links to libraries, scripts, stylesheets etc. -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page, appears on tab in a browser -->
+    <title>CatPhotoApp</title>
+    <!-- Links to Google fonts (custom font) -->
+    <link href="https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <!-- Refers to CSS stylesheets -->
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<!-- Wraps visible in browser content -->
+
+<body>
+
+    <!-- Top part of the website -->
+    <header>
+
+        <div>
+            <!-- Logo image -->
+            <img src="media/logo.png" alt="logo">
+
+            <!-- Heading -->
+            <h1 class="bold">CatPhotoApp</h1>
+        </div>
+
+
+        <!-- Navigation (with links) -->
+        <nav>
+            <!-- Unordered list-->
+            <ul>
+                <!-- List item -->
+                <li>
+                    <!-- Link to inner section of the website -->
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#cat-gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="home" class="hero"></section>
+
+    <main>
+        <!-- Standalone section (semantic div) -->
+        <section id="cat-gallery">
+
+            <h2>Cat Gallery</h2>
+
+            <p>
+                Attack dog, run away and pretend to be victim purr when being pet, yet sweet beast. Scratch at
+                fleas, meow until belly rubs, hide behind curtain when vacuum cleaner.
+            </p>
+
+            <div id="root"></div>
+
+        </section>
+
+        <!-- Standalone section (semantic div) -->
+        <aside id="about">
+
+            <!-- Self-contained composition in a document, app or site like a post or blog entry-->
+            <article>
+                
+                <h2>Cat Facts</h2>
+
+                <a href="media/cat-playing.gif" alt="cat playing gif image" target="_blank"
+                    title="Click to see another image!">
+                    <!-- Link within an image -->
+                    <img src="media/cat.jpg" alt="relaxing cat">
+                </a>
+
+                <!-- Non-semantic container for HTML elements -->
+                <div class="paragraph">
+                    <!-- Paragraph -->
+                    <p>
+                        Attack dog, run away and pretend to be victim purr when being pet, yet sweet beast. Scratch at
+                        fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers
+                        and poo on owners food somehow manage to catch a bird but have no idea what to do next, so play
+                        with it until it dies.
+                    </p>
+
+                    <!-- Line break -->
+                    <br>
+
+                    <p class="bold">
+                        <a href="https://unsplash.com/search/photos/cats" target="_blank">Click for more cat images!</a>
+                    </p>
+                </div>
+
+                <div class="clear">
+                    <p>Things cats love:</p>
+                    <ul>
+                        <li>Catnip</li>
+                        <li>Laser pointers</li>
+                        <li>Lasagna</li>
+                    </ul>
+                </div>
+
+                <div class="clear">
+                    <p>Top 3 things cats hate:</p>
+                    <!-- Ordered list -->
+                    <ol>
+                        <li>flea treatment</li>
+                        <li>thunder</li>
+                        <li>other cats</li>
+                    </ol>
+                </div>
+
+            </article>
+
+        </aside>
+
+        <!-- Form Element -->
+     <form action="/submit-cat-photo">
+        <h2>Submit your cat's picture</h2>
+        <!-- Label for a text field -->
+        <label for="user-email">Your email:</label>
+        <!-- Text field -->
+        <input id="user-email" type="email" required>
+        <br>
+        <br>
+        <label for="cat-name">Cat's name:</label>
+        <input id="cat-name" type="text">
+        <br>
+        <br>
+        <label for="cat-gender">Cat's gender:
+            <input type="radio" name="cat-gender">Male
+            <input type="radio" name="cat-gender">Female
+        </label>
+        <br>
+
+        <p>How would you describe your cat's personality?</p>
+        <label>
+            <input type="checkbox" name="personality"> Loving
+        </label>
+        <label>
+            <input type="checkbox" name="personality"> Lazy
+        </label>
+        <label>
+            <input type="checkbox" name="personality"> Energetic
+        </label>
+        <br>
+        <br>
+        <input type="text" placeholder="Cat photo URL" required>
+        <br>
+        <br>
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+    </main>
+
+    <!-- Bottom part of the website -->
+    <footer id="contact">
+        <!-- Generic inline text -->
+        <p>Copyrights by <span class="bold">CatPhotoApp</span> 2019</p>
+    </footer>
+
+    <!-- References local file with JavaScript script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

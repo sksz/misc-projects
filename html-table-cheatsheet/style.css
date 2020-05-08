@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.monospace {
+  font-family: Inconsolata, monospace;
+}
+
+body {
+  align-items: center;
+  color: #292929;
+  display: flex;
+  flex-flow: column;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-top: 150px;
+  padding: 0 50px 0 50px;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+header h3 {
+  font-size: 18.5px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+main {
+  flex: 1;
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+td {
+  font-size: 15px;
+  padding: 10px;
+}
+
+thead {
+  background: crimson;
+  font-size: 15px;
+}
+
+thead td {
+  font-weight: 700;
+}
+
+tbody td {
+  background: WhiteSmoke;
+}
+
+footer {
+  width: 100%;
+}
+
+.credits {
+  font-size: 14px;
+  margin: 20px;
+}
+
+.credits a {
+  color: white;
+  font-weight: 700;
+}
+
+.crimson {
+  background: crimson;
+  color: white;
+}

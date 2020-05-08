@@ -1,0 +1,234 @@
+body {
+    color: #262b2f;
+    font-family: Manjari, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #262b2f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: slateblue;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+p {
+    color: #40464a;
+    font-size: 18px;
+}
+
+/*
+*   HEADER & NAV
+*/
+
+header {
+    background: white;
+    padding: 15px 35px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header img {
+    width: 100px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+}
+
+nav {
+    margin-top: -35px;
+    text-align: right;
+}
+
+
+nav li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+li a {
+    transition: all .1s ease-in;
+}
+
+.hero {
+    background-image: url("media/cat-hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/*
+*   MAIN CONTENT
+*/
+
+main {
+    margin-top: 20px;
+    overflow: auto;
+    padding: 0 50px;
+}
+
+section {
+    float: left;
+    width: 60%;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid gray;
+}
+
+aside {
+    float: right;
+    margin-right: 0;
+    padding-right: 0;
+    width: 300px;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+article img {
+    float: left;
+    height: 150px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.clear {
+    clear: left;
+    margin-top: 10px;
+}
+
+.clear p {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.clear li {
+    font-size: 18px;
+    list-style: georgian inside url('media/cat-icon.svg');
+}
+
+/*
+*   FORM
+*/
+
+form {
+    border: 2px solid #313135;
+    border-radius: 10px;
+    clear: both;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 40%;
+}
+
+/*
+*   FOOTER
+*/
+
+footer {
+    background-color: #313135;
+    bottom: 0;
+    clear: both;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav li {
+        opacity: 0;
+    }
+
+    .hero {
+        background-position-x: 40%;
+        background-size: 250%;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    p,
+    form,
+    section,
+    aside {
+        width: 100%;
+    }
+
+    section,
+    aside {
+        float: none;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .hero {
+        background-image: url("media/cat-hero-big.jpg");
+        height: 75vh;
+    }
+
+}
