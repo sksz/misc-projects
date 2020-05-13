@@ -16,7 +16,7 @@ class Car
 
     public function setSpeed(float $speed): void
     {
-        if($speed < 0) {
+        if ($speed < 0) {
             return;
         }
 
