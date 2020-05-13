@@ -7,10 +7,9 @@ use \Eduweb\Speed;
 
 $speed = new Speed(1.5);
 
-echo $speed->getValue();
+echo $speed->getValue() . "\n";
 
-$car = new Car('Toyota', 'Corolla');
-$car->setSpeed(50.6);
+$car = new Car('Toyota', 'Corolla', $speed);
 
-echo "\n" . 'Speed: ' . $car->getSpeed();
+echo 'Speed: ' . $car->getSpeed()->getValue() . 'km/h';
 

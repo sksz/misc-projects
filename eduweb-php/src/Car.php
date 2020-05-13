@@ -6,24 +6,16 @@ class Car
 {
     protected $maker = '';
     protected $model = '';
-    protected $speed = 0.0;
+    protected $speed;
 
-    public function __construct(string $maker, string $model)
+    public function __construct(string $maker, string $model, Speed $speed)
     {
         $this->maker = $maker;
         $this->model = $model;
-    }
-
-    public function setSpeed(float $speed): void
-    {
-        if ($speed < 0) {
-            return;
-        }
-
         $this->speed = $speed;
     }
 
-    public function getSpeed(): float
+    public function getSpeed(): Speed
     {
         return $this->speed;
     }
