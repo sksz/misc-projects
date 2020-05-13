@@ -9,11 +9,11 @@ class Speed
 
     protected $value = 0.0;
     protected $unit = self::KILOMETERS; // default value
-    protected $validTypes = [self::KILOMETERS, self::MILES];
+    protected $validUnits = [self::KILOMETERS, self::MILES];
 
     public function __construct(float $value, ?string $type = null)
     {
-        if (in_array($type, $this->validTypes, true)) {
+        if (in_array($type, $this->validUnits, true)) {
             $this->unit = $type;
         }
 
