@@ -15,6 +15,11 @@ class Car
         $this->speed = $speed;
     }
 
+    public function slowDown(): Speed
+    {
+        return $this->getSpeed()->slowDown();
+    }
+
     public function getSpeed(): Speed
     {
         return $this->speed;
