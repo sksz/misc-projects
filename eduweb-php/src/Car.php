@@ -7,6 +7,7 @@ class Car
     protected $maker = '';
     protected $model = '';
     protected $speed;
+    protected $color = 'red';
 
     public function __construct(string $maker, string $model, Speed $speed)
     {
@@ -28,5 +29,13 @@ class Car
     public function drive(): void
     {
         echo "\nDriving";
+    }
+
+    public function __get(string $name)
+    {
+        if('color' === $name) {
+            return $this->color;
+        }
+        return null;
     }
 }
