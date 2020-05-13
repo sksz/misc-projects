@@ -1,0 +1,13 @@
+{
+    "name": "kurs/php",
+    "description": "Test project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ann Herbik",
+            "email": "ann@example.com"
+        }
+    ],
+    "require": {}
+}
