@@ -1,13 +1,19 @@
 {
-    "name": "kurs/php",
-    "description": "Test project",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ann Herbik",
-            "email": "ann@example.com"
-        }
-    ],
-    "require": {}
+  "name": "kurs/php",
+  "description": "Test project",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ann Herbik",
+      "email": "ann@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Eduweb\\": "src/"
+    }
+  },
+  "require": {
+  }
 }
