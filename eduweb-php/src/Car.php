@@ -31,11 +31,8 @@ class Car
         echo "\nDriving";
     }
 
-    public function __get(string $name)
+    public function getColor(): string
     {
-        if('color' === $name) {
-            return $this->color;
-        }
-        return null;
+        return $this->color;
     }
 }
