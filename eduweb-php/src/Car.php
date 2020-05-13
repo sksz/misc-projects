@@ -23,6 +23,11 @@ class Car
         $this->speed = $speed;
     }
 
+    public function getSpeed(): float
+    {
+        return $this->speed;
+    }
+
     public function drive(): void
     {
         echo "\nDriving";
