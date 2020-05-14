@@ -8,6 +8,7 @@ class Car
     protected $model = '';
     protected $speed;
     protected $color = 'red';
+    protected $sttributes = [];
 
     public function __construct(string $maker, string $model, Speed $speed)
     {
@@ -34,5 +35,10 @@ class Car
     public function getColor(): string
     {
         return $this->color;
+    }
+
+    public function __set(string $name, $value): void
+    {
+        $this->sttributes[$name] = $value;
     }
 }
