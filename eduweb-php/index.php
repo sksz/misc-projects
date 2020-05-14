@@ -2,13 +2,8 @@
 
 include_once __DIR__ . '/vendor/autoload.php';
 
-use \Eduweb\Car;
-use \Eduweb\Cab;
-use \Eduweb\Speed;
+use \Eduweb\Game\Race;
 
-$speed = new Speed(1.5);
-$cab = new Cab('Ford', 'Mondeo', $speed);
-$car = new Car('Toyota', 'Corolla', $speed);
+$race = new Race();
+$race->run();
 
-echo 'Car color: ' . $car->getColor() . "\n";
-echo 'Cab color: ' . $cab->getColor() . "\n";
