@@ -29,16 +29,11 @@ class Car
 
     public function drive(): void
     {
-        echo "\nDriving";
+        echo "\nDriving car";
     }
 
     public function getColor(): string
     {
         return $this->color;
-    }
-
-    public function __call(string $name, array $attr)
-    {
-        var_dump($name, $attr);
     }
 }
