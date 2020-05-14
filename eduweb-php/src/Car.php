@@ -8,7 +8,7 @@ class Car
     protected $model = '';
     protected $speed;
     protected $color = 'red';
-    protected $sttributes = [];
+    protected $attributes = [];
 
     public function __construct(string $maker, string $model, Speed $speed)
     {
@@ -37,8 +37,13 @@ class Car
         return $this->color;
     }
 
+    public function __get($name)
+    {
+        return $this->attributes[$name] ? : null;
+    }
+
     public function __set(string $name, $value): void
     {
-        $this->sttributes[$name] = $value;
+        $this->attributes[$name] = $value;
     }
 }

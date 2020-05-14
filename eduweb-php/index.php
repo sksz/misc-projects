@@ -10,7 +10,8 @@ $speed = new Speed(1.5);
 
 $car = new Car('Toyota', 'Corolla', $speed);
 $car->seats = 4;
-var_dump($car);
+echo 'Seats: ' . $car->seats ."\n";
+//  var_dump($car);
 
-echo 'Color: ' . $car->getColor() . "\n" ;
+echo 'Color: ' . $car->getColor() . "\n";
 echo 'Speed: ' . $car->getSpeed();
