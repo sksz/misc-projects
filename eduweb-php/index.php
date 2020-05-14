@@ -6,12 +6,9 @@ use \Eduweb\Car;
 use \Eduweb\Speed;
 
 $speed = new Speed(1.5);
-// echo $speed->getValue() . "\n";
 
 $car = new Car('Toyota', 'Corolla', $speed);
-$car->seats = 4;
-echo 'Seats: ' . $car->seats ."\n";
-//  var_dump($car);
+$car->test('a', 'b', 4);
 
 echo 'Color: ' . $car->getColor() . "\n";
 echo 'Speed: ' . $car->getSpeed();

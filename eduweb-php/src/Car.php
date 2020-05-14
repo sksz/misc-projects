@@ -37,13 +37,8 @@ class Car
         return $this->color;
     }
 
-    public function __get($name)
+    public function __call(string $name, array $attr)
     {
-        return $this->attributes[$name] ? : null;
-    }
-
-    public function __set(string $name, $value): void
-    {
-        $this->attributes[$name] = $value;
+        var_dump($name, $attr);
     }
 }
