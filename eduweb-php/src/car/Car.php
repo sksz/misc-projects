@@ -7,7 +7,7 @@ class Car
     protected $maker = '';
     protected $model = '';
     protected $speed;
-    protected $color = 'red';
+    private $color = 'red';
     protected $attributes = [];
 
     public function __construct(string $maker, string $model, Speed $speed)
