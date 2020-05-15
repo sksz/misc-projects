@@ -2,7 +2,7 @@
 
 namespace Eduweb\Game;
 
-class Bike extends Vehicle
+class Bike extends AbstractVehicle
 {
 
 }
