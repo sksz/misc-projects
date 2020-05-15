@@ -4,7 +4,20 @@ namespace Eduweb\Game;
 
 class Weather
 {
-    private $current = 'Sunny';
+    private $current = self::SHINING;
+
+    const RAINING = 'raining';
+    const SHINING = 'shining';
+
+    public function randomizeWeather(): void
+    {
+        $this->current =  0 === random_int(0, 2) ? self::RAINING : self::SHINING;
+    }
+
+    public function isRaining(): bool
+    {
+        return $this->current === self::RAINING;
+    }
 
     public function  __toString(): string
     {

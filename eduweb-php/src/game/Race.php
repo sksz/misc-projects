@@ -31,6 +31,7 @@ class Race
 
     private function tour(int $tour)
     {
+        $this->weather->randomizeWeather();
         $this->displayTourInfo($tour);
         foreach ($this->vehicles as $vehicle) {
             $vehicle->move();
