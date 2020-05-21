@@ -9,9 +9,9 @@ use \Eduweb\Game\VehicleFactory;
 $weather = new Weather();
 
 $race = new Race($weather);
-$race->addVehicle(VehicleFactory::factory(VehicleFactory::CAR, 1));
-$race->addVehicle(VehicleFactory::factory(VehicleFactory::CAR, 2));
-$race->addVehicle(VehicleFactory::factory(VehicleFactory::CAR, 3));
-$race->addVehicle(VehicleFactory::factory(VehicleFactory::BIKE, 4));
+$race->addVehicle(VehicleFactory::factory(VehicleFactory::CAR, 'abCD'));
+$race->addVehicle(VehicleFactory::factory(VehicleFactory::CAR, 'cdEF'));
+$race->addVehicle(VehicleFactory::factory(VehicleFactory::TRUCK, 'ghi'));
+$race->addVehicle(VehicleFactory::factory(VehicleFactory::BIKE, 'zaw4'));
 $race->run();
 
