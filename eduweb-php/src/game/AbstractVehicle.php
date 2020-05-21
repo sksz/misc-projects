@@ -6,6 +6,7 @@ abstract class AbstractVehicle implements Vehicle
 {
     protected $name;
     protected $type;
+    protected $distance = 0;
 
     public function __construct(string $name)
     {
@@ -14,13 +15,26 @@ abstract class AbstractVehicle implements Vehicle
 
     public function move(): void
     {
-        echo "\n {$this->getType()} ({$this->getName()}) is moving";
+        $this->beforeMove();
+
+        echo "\n {$this->getType()} ({$this->getName()}) is moving by {$this->distance}";
+
+        $this->afterMove();
     }
 
-    protected function getType() : string
+    protected function getType(): string
     {
         return $this->type;
     }
 
-    abstract protected function getName() : string;
+    protected function beforeMove(): void
+    {
+    }
+
+    protected function afterMove(): void
+    {
+    }
+
+    abstract protected function getName(): string;
+
 }
