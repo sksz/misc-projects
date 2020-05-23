@@ -1,22 +1,30 @@
 <?php
-// bootstrap.php
+
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
 require_once "vendor/autoload.php";
 
-// Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
 $proxyDir = null;
 $cache = null;
 $useSimpleAnnotationReader = false;
-$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__ . "/src"), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
+
+$config = Setup::createAnnotationMetadataConfiguration(
+    [__DIR__."/src"],
+    $isDevMode,
+    $proxyDir,
+    $cache,
+    $useSimpleAnnotationReader
+);
 
 // database configuration parameters
-$conn = array(
-    'dbname' -> 'bugtracker',
+$conn = [
+    'dbname' => 'bugtracker',
     'user' => 'root',
-    'password' => '123',
+    'password' => 'nope',
     'driver' => 'pdo_sqlite',
     'path' => __DIR__ . '/db.sqlite',
-);
+];
+
+$entityManager = EntityManager::create($conn, $config);
