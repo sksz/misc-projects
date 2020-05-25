@@ -21,23 +21,25 @@
     <b>Basic Crud App</b>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/basic-crud" target="_blank">[Code]</a>
     <br>
-    <p>- Simple CRUD app for interacting with mySQL databases, using Doctrine, PHP entities & Faker for generating test data
-    <br>
-    - Environment: <i>PHP 7.1.3, Composer 1.10, Symfony 4.4, Doctrine 2.0</i>
+    <p>
+      - Simple CRUD app for interacting with mySQL databases, using Doctrine, PHP entities & Faker for generating test data
+      <br>
+      - Environment: <i>PHP 7.1.3, Composer 1.10, Symfony 4.4, Doctrine 2.0</i>
+      <br>
+      - Latest update: <i>May 2020</i>
     </p>
-    <p>- Latest update: <i>May 2020</i></p>
-    <br>
   </li>
   <li>
     <b>Eduweb PHP Game</b>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/eduweb-php" target="_blank">[Code]</a>
     <br>
-    <p>- Text-based racing simluator; design patterns & classes practice
-    <br>
-    - Environment: <i>PHP 7.4, Composer 1.10</i>
+    <p>
+      - Text-based racing simluator; design patterns & classes practice
+      <br>
+      - Environment: <i>PHP 7.4, Composer 1.10</i>
+      <br>
+      - Latest update: <i>May 2020</i>
     </p>
-    <p>- Latest update: <i>May 2020</i></p>
-    <br>
   </li>
 </ul>
 
@@ -49,12 +51,13 @@
     <a href="https://ann-dev.github.io/misc-projects/portfolio-v1beta/" target="_blank">[Live Preview]</a>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/portfolio-v1beta" target="_blank">[Code]</a>
     <br>
-    <p>- Responsive HTML page - personal portfolio
-    <br>
-    - Environment: <i>Static HTML</i>
+    <p>
+      - Responsive HTML page - personal portfolio
+      <br>
+      - Environment: <i>Static HTML</i>
+      <br>
+      - Latest update: <i>November 2019</i>
     </p>
-    <p>- Latest update: <i>November 2019</i></p>
-    <br>
   </li>
   <!-- Project -->
   <li>
@@ -62,12 +65,13 @@
     <a href="https://ann-dev.github.io/misc-projects/cat-api-test/" target="_blank">[Live Preview]</a>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/cat-api-test" target="_blank">[Code]</a>
     <br>
-    <p>- Static HTML page that generates new cat image each time it's being refreshed
-    <br>
-    - Environment: <i>Static HTML, ES6, The Cat API</i>
+    <p>
+      - Static HTML page that generates new cat image each time it's being refreshed
+      <br>
+      - Environment: <i>Static HTML, ES6, The Cat API</i>
+      <br>
+      - Latest update: <i>September 2019</i>
     </p>
-    <p>- Latest update: <i>September 2019</i></p>
-    <br>
   </li>
   <!-- Project -->
   <li>
@@ -75,12 +79,13 @@
     <a href="https://ann-dev.github.io/misc-projects/cat-photo-app/" target="_blank">[Live Preview]</a>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/cat-photo-app" target="_blank">[Code]</a>
     <br>
-    <p>- Responsive HTML page inspired by freeCodeCamp's HTML project, with HTML form for submitting user images
-    <br>
-    - Environment: <i>Static HTML</i>
-    </p>
-    <p>- Latest update: <i>September 2019</i></p>
-    <br>
+    <p>
+      - Responsive HTML page inspired by freeCodeCamp's HTML project, with HTML form for submitting user images
+      <br>
+      - Environment: <i>Static HTML</i>
+      <br>
+      - Latest update: <i>September 2019</i>
+      </p>
   </li>
   <!-- Project -->
    <li>
@@ -88,11 +93,12 @@
     <a href="https://ann-dev.github.io/misc-projects/html-table-cheatsheet/" target="_blank">[Live Preview]</a>
     <a href="https://github.com/ann-dev/misc-projects/tree/master/html-table-cheatsheet" target="_blank">[Code]</a>
     <br>
-    <p>- Responsive HTML page describing tags used for HTML tables
-    <br>
-    - Environment: <i>Static HTML</i>
+    <p>
+      - Responsive HTML page describing tags used for HTML tables
+      <br>
+      - Environment: <i>Static HTML</i>
+      <br>
+      - Latest update: <i>July 2019</i>
     </p>
-    <p>- Latest update: <i>July 2019</i></p>
-    <br>
   </li>
 </ul>
