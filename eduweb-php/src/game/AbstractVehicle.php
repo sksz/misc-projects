@@ -13,6 +13,11 @@ abstract class AbstractVehicle implements Vehicle
         $this->name = $name;
     }
 
+    public function getDistance(): float
+    {
+        return $this->distance;
+    }
+
     public function move(): void
     {
         $this->beforeMove();
@@ -22,7 +27,7 @@ abstract class AbstractVehicle implements Vehicle
         $this->afterMove();
     }
 
-    protected function getType(): string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -35,6 +40,6 @@ abstract class AbstractVehicle implements Vehicle
     {
     }
 
-    abstract protected function getName(): string;
+    abstract public function getName(): string;
 
 }

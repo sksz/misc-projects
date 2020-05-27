@@ -7,7 +7,7 @@ class Bike extends AbstractVehicle
     protected $type = 'Bike';
     protected $maxSpeed = 250;
 
-    protected function getName(): string
+    public function getName(): string
     {
         return $this->name;
     }

@@ -7,7 +7,7 @@ class Truck extends AbstractVehicle
     protected $type = 'Truck';
     protected $maxSpeed = 100;
 
-    protected function getName(): string
+    public function getName(): string
     {
         return strtolower($this->name);
     }
