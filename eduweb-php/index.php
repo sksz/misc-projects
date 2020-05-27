@@ -9,7 +9,7 @@ use \Eduweb\Game\SportsCar;
 
 $builder = new VehicleBuilder();
 
-$weather = new Weather();
+$weather = Weather::getInstance();
 
 $race = new Race($weather);
 
