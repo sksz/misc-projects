@@ -23,6 +23,14 @@ class SportsCar implements Vehicle
         echo sprintf("\n I'm moving (%s) - %02.1f", $this->car->getName(), $this->car->getDistance());
     }
 
+    public function notify(string $event): void
+    {
+        if($event === 'nextTour') {
+            $this->move();
+        }
+    }
+
+
     public function getDistance(): float
     {
         return $this->car->getDistance();

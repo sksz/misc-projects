@@ -15,11 +15,11 @@ $race = new Race($weather);
 
 $builder->setType(VehicleBuilder::CAR);
 
-$builder->setName('Fiat');
-$race->addVehicle($builder->build());
-
 $builder->setName('Bugatti');
 $race->addVehicle(new SportsCar($builder->build()));
+
+$builder->setName('Fiat');
+$race->addVehicle($builder->build());
 
 $builder->setType(VehicleBuilder::TRUCK);
 

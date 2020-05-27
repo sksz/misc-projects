@@ -27,6 +27,13 @@ abstract class AbstractVehicle implements Vehicle
         $this->afterMove();
     }
 
+    public function notify(string $event): void
+    {
+        if($event === 'nextTour') {
+            $this->move();
+        }
+    }
+
     public function getType(): string
     {
         return $this->type;
