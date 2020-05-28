@@ -1,22 +1,28 @@
-# Basic Crud App
+<h1 align="center">
+  Basic Crud App
+</h1>
 
-## About
+<h4 align="center">Simple CRUD app for interacting with mySQL databases</h4>
 
-Simple CRUD app for interacting with mySQL databases, using Doctrine, PHP entities & Faker for generating test data.
+<p align="center">This is a test project (for learning purposes only), based on tutorials mentioned below.</p>
 
-### Environment
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a>
+</p>
 
--   PHP 7.1.3
--   Composer 1.10
--   Symfony 4.4
--   Doctrine 2.0
--   Faker
+## Features
 
-### Instructions
+-   Create mySQL databases from PHP entities
+-   Make SQL queries by using console helpers
+-   Generate and populate mySQL databases with fake data using Faker
+
+## How To Use
 
 **IMPORTANT:** For database to work, modify **DATABASE_URL** environment variable in the **.env** file first
 
-#### Basic commands
+### Basic commands
 
 ```shell
 ### Install Composer dependencies
@@ -32,7 +38,7 @@ bin/console server:run
 bin/console doctrine:query:sql
 ```
 
-#### Command line helpers
+### Command line helpers
 
 ```shell
 ### Make entity
@@ -54,7 +60,17 @@ bin/console make:crud
 bin/console doctrine:fixtures:load
 ```
 
-### Credits
+## Credits
+
+### Attribution
 
 -   [Basic CRUD website tutorial by Alex Vo](https://medium.com/@vtla/create-a-basic-crud-website-with-symfony-4-2-and-some-command-line-helpers-3719677d0e)
 -   [Symfony REST, CRUD & Swag tutorial by Luka Gado](https://medium.com/q-software/symfony-5-the-rest-the-crud-and-the-swag-7430cb84cd5)
+
+### Used Open-Source packages:
+
+-   PHP 7.1.3
+-   Composer 1.10
+-   Symfony 4.4
+-   Doctrine 2.0
+-   Faker
