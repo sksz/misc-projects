@@ -1,8 +1,8 @@
 <?php
 
-namespace Eduweb\Game;
+namespace Eduweb\game;
 
-class SportsCar implements Vehicle
+class SportsCar implements Vehicle, Observer
 {
     /**
      * @var Car
@@ -25,11 +25,8 @@ class SportsCar implements Vehicle
 
     public function notify(string $event): void
     {
-        if($event === 'nextTour') {
-            $this->move();
-        }
+        $this->car->notify($event);
     }
-
 
     public function getDistance(): float
     {
