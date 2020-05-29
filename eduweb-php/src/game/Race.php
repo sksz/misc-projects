@@ -2,7 +2,7 @@
 
 namespace Eduweb\game;
 
-class Race implements Obervable
+class Race implements Observable
 {
     private $distance = 0;
     private $maxTours = 5;
