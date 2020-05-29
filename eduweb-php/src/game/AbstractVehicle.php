@@ -29,7 +29,7 @@ abstract class AbstractVehicle implements Vehicle, Observer
 
     public function notify(string $event): void
     {
-        if($event === 'nextTour') {
+        if ($event === 'nextTour') {
             $this->move();
         }
     }
@@ -48,5 +48,4 @@ abstract class AbstractVehicle implements Vehicle, Observer
     }
 
     abstract public function getName(): string;
-
 }

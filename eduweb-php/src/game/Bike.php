@@ -22,5 +22,4 @@ class Bike extends AbstractVehicle
             echo sprintf("\n Bike %s is slowing down", $this->getName());
         }
     }
-
 }

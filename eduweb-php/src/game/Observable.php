@@ -3,8 +3,6 @@
 
 namespace Eduweb\game;
 
-
 interface Observable
 {
-
 }
