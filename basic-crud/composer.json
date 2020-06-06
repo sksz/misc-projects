@@ -1,4 +1,6 @@
 {
+    "name": "misc/basic_crud",
+    "description": "Basic CRUD REST API",
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -24,6 +26,10 @@
         "symfony/web-server-bundle": "4.4.*"
     },
     "config": {
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.2"
+        }
         "preferred-install": {
             "*": "dist"
         },
